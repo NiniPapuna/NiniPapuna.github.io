@@ -1,4 +1,4 @@
-# NiniPapunashvili.github.io
+# NiniPapuna.github.io
 
 
 ## Projects
