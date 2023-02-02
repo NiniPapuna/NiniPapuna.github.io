@@ -1,5 +1,4 @@
-# NiniPapunashvili.github.io
-<<<<<<< HEAD
+# NiniPapuna.github.io
 
 
 ## Projects
@@ -43,5 +42,4 @@
 - WA13
 - WA14
 - WA15
-=======
->>>>>>> d17101ab3c04de32753a737f2a78d0cdfdd573e1
+
