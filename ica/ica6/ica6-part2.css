@@ -1,0 +1,65 @@
+body{
+    background-color: olive;
+}
+
+
+#flex-parent{
+    display:flex;
+    background-color: orangered;
+}
+#flex-parent p{
+    padding:5vw;
+}
+
+
+#grid-parent{
+    display:grid;
+}
+
+#grid-parent h1{
+    background-color: grey;
+    padding:3vw 5vh;
+    margin:5vw;
+    width: .5in;
+    
+}
+#no0{
+    position: absolute;
+    transform: translate(15vw,30vw);
+
+}
+#no1{
+    transform:translate(5vw);
+}
+#no2{
+    transform: translate(15vw, .1vw);
+    position:absolute;
+}
+#no3{
+    transform: translate(25vw, .1vw);
+    position:absolute;
+}
+#no4{
+    transform:translate(5vw,10vw);
+    position:absolute;
+}
+#no5{
+    position:absolute;
+    transform: translate(15vw,10vw);
+}
+#no6{
+    position:absolute;
+    transform: translate(25vw,10vw);
+}
+#no7{
+    position: absolute;
+    transform: translate(5vw,20vw);
+}
+#no8{
+    position:absolute;
+    transform: translate(15vw,20vw);
+}
+#no9{
+    position:absolute;
+    transform: translate(25vw,20vw);
+}
