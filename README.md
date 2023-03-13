@@ -11,11 +11,11 @@
 
 - ICA1
 - ICA2
-- ICA3 [link](/ica/ica3a.html)
+- ICA3 [link](/ica/"ica3a.html")
 - ICA4
 - ICA5
-- ICA6
-- ICA7 [link](/ica/ica7.html)
+- ICA6 [link](/ica/ica6)
+- ICA7 [link](/ica/"ica7.html")
 - ICA8
 - ICA9
 - ICA10
