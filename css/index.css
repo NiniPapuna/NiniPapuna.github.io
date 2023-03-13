@@ -1,0 +1,50 @@
+p{
+    font-size: 200%;
+    color:white;
+    font-style:oblique;
+    text-align: center;
+}
+body{
+    background-color: pink;
+}
+.flowerimg{
+    position: absolute;
+    width: 20%;
+    height: 40%;
+}
+
+.nightimg{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 40%;
+}
+
+.roomimg{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 40%;
+}
+
+.magazineimg{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 40%;
+}
+
+.chicagoimg{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 40%;
+}
+
+@keyframes pics2move{
+    0%{left:o; top:0;}
+    25%{left:75vw; top:0;}
+    50%{left:75vw; top:80vh;}
+    75%{left: 0vw; top:80vh;}
+    100%{left:0;top:0;}
+}
