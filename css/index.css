@@ -1,3 +1,5 @@
+@media screen and (min-width: 401px){
+
 p{
     font-size: 200%;
     color:white;
@@ -10,7 +12,7 @@ body{
 .flowerimg{
     position: absolute;
     width: 20%;
-    height: 40%;
+    height: 39.15%;
 }
 
 .nightimg{
@@ -47,4 +49,5 @@ body{
     50%{left:75vw; top:80vh;}
     75%{left: 0vw; top:80vh;}
     100%{left:0;top:0;}
+}
 }
