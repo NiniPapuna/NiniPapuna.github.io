@@ -7,7 +7,7 @@
 - CSS
 - JS
 
-## In-Class Assignments
+## ICA
 
 - ICA1
 - ICA2
@@ -17,7 +17,7 @@
 - ICA6 [link](/ica/ica6)
 - ICA7 [link](/ica/"ica7.html")
 - ICA8
-- ICA9 [link]("ica9.html")
+- ICA9 [link]("/ICA/ica9.html")
 - ICA10
 - ICA11
 - ICA12
