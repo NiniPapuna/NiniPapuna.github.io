@@ -35,7 +35,7 @@
 - WA6
 - WA7
 - WA8
-- WA9
+- WA9 [link]("/wa/index.html")
 - WA10
 - WA11
 - WA12
