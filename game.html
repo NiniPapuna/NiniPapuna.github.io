@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- basic guessing the number game -->
+
+    <title>Guessing Game</title>
+    <style>
+      body {
+        background-color: #f7c2ea;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+      }
+
+      #message {
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #eee;
+        color: #333;
+      }
+
+      #start {
+        background-color: #f44336;
+      }
+
+      #start:hover {
+        background-color: #da2f27;
+      }
+    </style>
+
+    <script>
+      var answer;
+      var maxAttempts;
+      var attempts;
+      var score;
+
+      function startGame() {
+        answer = Math.floor(Math.random() * 100) + 1;
+        maxAttempts = Math.ceil(Math.log2(answer)) + 5;
+        attempts = 0;
+        score = 100;
+        document.getElementById("guess").disabled = false;
+        document.getElementById("submit").disabled = false;
+        document.getElementById("start").disabled = true;
+        document.getElementById("guess").focus();
+        document.getElementById("message").innerHTML =
+          "Guess a number between 1 and 100. You have " +
+          maxAttempts +
+          " attempts. Good luck!";
+      }
+
+      function checkGuess() {
+        var guess = parseInt(document.getElementById("guess").value);
+
+        if (isNaN(guess) || guess < 1 || guess > 100) {
+          alert("Invalid guess. Please enter a number between 1 and 100.");
+          document.getElementById("guess").value = "";
+          return;
+        }
+
+        attempts++;
+        score -= 10;
+
+        if (guess == answer) {
+          document.getElementById("message").innerHTML =
+            "Congratulations! You guessed the number in " +
+            attempts +
+            " attempts with a score of " +
+            score +
+            ".";
+          document.getElementById("guess").disabled = true;
+          document.getElementById("submit").disabled = true;
+          document.getElementById("start").disabled = false;
+        } else if (guess < answer) {
+          document.getElementById("message").innerHTML =
+            "Too low! You have " + (maxAttempts - attempts) + " attempts left.";
+        } else {
+          document.getElementById("message").innerHTML =
+            "Too high! You have " +
+            (maxAttempts - attempts) +
+            " attempts left.";
+        }
+
+        if (attempts >= maxAttempts) {
+          document.getElementById("message").innerHTML =
+            "Game over! The number was " +
+            answer +
+            ". Your score is 0. Better luck next time!";
+          document.getElementById("guess").disabled = true;
+          document.getElementById("submit").disabled = true;
+          document.getElementById("start").disabled = false;
+        }
+
+        document.getElementById("guess").value = "";
+        document.getElementById("guess").focus();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Guessing The Number Game</h1>
+    <p id="message">Press the Start button to begin.</p>
+    <button id="start" onclick="startGame()">Start</button>
+    <input type="text" id="guess" disabled />
+    <button id="submit" onclick="checkGuess()" disabled>Submit</button>
+  </body>
+</html>
